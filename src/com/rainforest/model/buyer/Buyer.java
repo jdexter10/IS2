@@ -1,10 +1,19 @@
 package com.rainforest.model.buyer;
 
-import com.rainforest.model.buyer.BuyerInfo;
+
 public class Buyer {
 
 	private BuyerInfo info ;
 
+	public Buyer(BuyerInfo info) {
+		super();
+		this.info = info;
+	}
+
+	@Override
+	public int hashCode() {
+		return info.hashCode();
+	}
 	
 	
 }
